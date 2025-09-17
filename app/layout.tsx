@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { IBM_Plex_Mono, Sora } from "next/font/google";
 import "./globals.css";
 
@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={${sora.variable}  antialiased bg-[#0B0D12]}
+        className={`${sora.variable} ${plexMono.variable} antialiased bg-[#0B0D12]`}
       >
         {children}
       </body>
